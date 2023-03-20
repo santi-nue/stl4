@@ -49,7 +49,11 @@ with st.echo():
     
     
     
-    search_box = driver.find_element_by_css_selector('input[aria-label="search"]') 
+    # search_box = driver.find_element_by_css_selector('input[aria-label="search"]') 
+    
+    
+    search_box = driver.find_element(By.CSS_SELECTOR,'input[aria-label="search"]') 
+    
     search_box.send_keys(
         'https://www.planespotters.net/production-list/index'
     )
@@ -57,7 +61,7 @@ with st.echo():
     # either press the enter key
     search_box.send_keys(Keys.ENTER)
     # or click search button
-    # search_button = driver.find_element_by_css_selector('button[icon="NavSearch"]')
+    # search_button = driver.find_element(By.CSS_SELECTOR,'button[icon="NavSearch"]')
     # search_button.click()   
     
     time.sleep(6)
