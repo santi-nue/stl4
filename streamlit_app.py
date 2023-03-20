@@ -25,6 +25,6 @@ with st.echo():
     options.add_argument('--headless')
 
     driver = get_driver()
-    driver.get("https://api.planespotters.net/pub/photos/hex/aa99b7")
+    driver.get("https://www.planespotters.net/search?q=aa99b7")
 
     st.code(driver.page_source)
