@@ -26,5 +26,18 @@ with st.echo():
 
     driver = get_driver()
     driver.get("https://www.startpage.com")
+    
+    
+    # Maximize the window and let code stall 
+    # for 10s to properly maximise the window.
+    driver.maximize_window()
+    time.sleep(6)
+    
+    stext = driver.find_element(By.ID, "search")
+    
+    stext.send_keys("https://www.planespotters.net/production-list/index")
+    
+    time.sleep(6)
+    
 
     st.code(driver.page_source)
