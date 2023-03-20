@@ -39,7 +39,7 @@ with st.echo():
     
     
     # stext.clear()
-    stext.sendKeys("https://www.planespotters.net/production-list/index")
+    stext.send_keys("https://www.planespotters.net/production-list/index")
     
     time.sleep(6)
     
