@@ -1,4 +1,5 @@
 import streamlit as st
+import time
 
 """
 ## Web scraping on Streamlit Cloud with Selenium
