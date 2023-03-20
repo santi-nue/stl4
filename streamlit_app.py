@@ -37,7 +37,9 @@ with st.echo():
     
     stext = driver.find_element(By.ID, "search")
     
-    stext.send_keys("https://www.planespotters.net/production-list/index")
+    
+    stext.clear()
+    stext.sendKeys("https://www.planespotters.net/production-list/index")
     
     time.sleep(6)
     
